@@ -45,7 +45,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t mailtomeforinfo/tech-github-actions/mavenwebappjar1:latest .
+        docker build -t mailtomeforinfo/githubactions:latest .
       working-directory: ./
 
     - name: Push Docker image to Docker Hub
@@ -55,4 +55,4 @@ jobs:
       run: |
         docker images
         echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-        docker push mailtomeforinfo/tech-github-actions/mavenwebappjar1:latest
+        docker push mailtomeforinfo/githubactions:latest
