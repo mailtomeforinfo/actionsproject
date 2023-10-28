@@ -45,5 +45,5 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t MavenWebappjar1 .
+        docker build -t mailtomeforinfo/tech-github-actions/mavenwebappjar1:latest .
       working-directory: ./
